@@ -192,7 +192,6 @@ public class Drive implements IDrive {
 
     @Override
     public void periodic() {
-        Debug.log(gyroscope.getPitch)
         if (mode == Mode.MANUAL) {
             manualControlPeriodic();
             //Debug.logPeriodic("Yaw " + Double.toString(gyroscope.getYaw()));
@@ -202,7 +201,7 @@ public class Drive implements IDrive {
             Debug.logPeriodic("autodrive is running");
             angularSpeed = rotationController.calculate(gyroscope.getYaw(), desiredAngle);
         
-            driveBase.drivePolar(autoSpeed, autoAngleDegrees, angularSpeed);
+            // driveBase.drivePolar(autoSpeed, autoAngleDegrees, angularSpeed);
 
             // Check if we've completed our travel
             double averageDistanceTraveledLeft = Math.abs((frontLeftMotor.getEncoder().getPosition() + rearLeftMotor.getEncoder().getPosition()) / 2);

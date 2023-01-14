@@ -14,6 +14,10 @@ public class AutonomousMode implements IRobotMode {
         Debug.log("autoMove2");
     }
 
+    public void init() {
+        // add init code
+    }
+
     @Override
     public void periodic() {
 

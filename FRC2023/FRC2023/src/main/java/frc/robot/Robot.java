@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj.RobotBase;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
+// hi
 public class Robot extends RobotBase {
 
     private IRobotMode disabledMode;
